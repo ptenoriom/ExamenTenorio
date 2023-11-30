@@ -1,0 +1,28 @@
+
+button.celeste {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+ .footer-image {
+        max-width: 100px;
+        float: right;
+        margin-top: 200px;
+ }
+ .vertical-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+.vertical-form label {
+    margin-bottom: 5px;
+}
+
+.vertical-form input, .vertical-form button {
+    margin-bottom: 10px;
+}

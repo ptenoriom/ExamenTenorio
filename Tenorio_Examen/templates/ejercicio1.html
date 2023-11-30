@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Requerimiento1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilose1.css') }}">
+</head>
+<body>
+    <h1>Calculo de compras</h1>
+    <form action="{{ url_for('procesar_ejercicio1') }}" method="post">
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="edad">Ingrese su edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="cantidad_tarros">Ingrese la cantidad de tarros de pintura a comprar:</label>
+        <input type="number" id="cantidad_tarros" name="cantidad_tarros" required>
+
+        <button type="submit" class="celeste">Calcular</button>
+    </form>
+
+    <div id="resultados">
+        {% if resultados %}
+            <h2>Resultados</h2>
+            <p>Nombre: {{ resultados.nombre }}</p>
+            <p>Total sin descuento: ${{ resultados.total_sin_descuento }}</p>
+            <p>Total a pagar con descuento: ${{ resultados.total_con_descuento }}</p>
+        {% endif %}
+    </div>
+    <div>
+        <footer>
+        <img src="{{ url_for('static', filename='gatito2.gif') }}" alt="Pie de página" class="footer-image">
+        </footer>
+    </div>
+
+</body>
+</html>

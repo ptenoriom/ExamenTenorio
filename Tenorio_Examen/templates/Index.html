@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a mi examen</h1>
+        <p>Haz click en el botón del ejercicio a revisar.</p>
+        <a href="{{ url_for('ejercicio1') }}"><button class="btn">Ejercicio 1</button></a>
+        <a href="{{ url_for('ejercicio2') }}"><button class="btn btn-blue">Ejercicio 2</button></a>
+    </div>
+    <div>
+        <footer>
+        <img src="{{ url_for('static', filename='gatito.gif') }}" alt="Pie de página" class="footer-image">
+        </footer>
+    </div>
+</body>
+</html>

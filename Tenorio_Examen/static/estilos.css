@@ -1,0 +1,31 @@
+body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #592693;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn-blue {
+            background-color: #03C04A;
+        }
+        .footer-image {
+        max-width: 100px;
+        float: right;
+        margin-top: 200px;
+        }
