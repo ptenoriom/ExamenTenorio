@@ -1,0 +1,5 @@
+https://github.com/ptenoriom/ExamenTenorio/
+
+Esta vez lo hice correcto, todo funciona y está probado.
+Le agregué gif al final de la página solo porque sí, pero no me fijé y uno no era "transparente" y se ve raro.
+Saludos profesor, un gusto.
